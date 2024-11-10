@@ -61,11 +61,17 @@ class _CompletedWidgetState extends State<CompletedWidget> {
                   child: ListTile(
                     title: Text(
                       todo.title,
-                      style: TextStyle(fontWeight: FontWeight.w500),
+                      style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        decoration: TextDecoration.lineThrough,
+                      ),
                     ),
                     subtitle: Text(
                       todo.description,
-                      style: TextStyle(fontWeight: FontWeight.w500),
+                      style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        decoration: TextDecoration.lineThrough,
+                      ),
                     ),
                     trailing: Text(
                       '${dt.day}/${dt.month}/${dt.year}',
